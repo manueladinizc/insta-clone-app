@@ -1,11 +1,13 @@
-// NOTE: replace 'zOnnCKKEAwMduP3WXrCwtRrKUT92' with your Firebase auth user id (can be taken from Firebase at the auth section! Look for User UID)
-export function seedDatabase(firebase) {
+// NOTE: replace '1' with your Firebase auth user id (can be taken from Firebase at the auth section! Look for User UID)
+/* eslint-disable no-plusplus */
+// NOTE: replace 'zOnnCKKEAwMduP3WXrCwtRrKUT92' with your Firebase auth user id (can be taken from Firebase)
+export function seedDatabase(FirebaseApp) {
   const users = [
     {
-      userId: 'zOnnCKKEAwMduP3WXrCwtRrKUT92',
-      username: 'karl',
-      fullName: 'Karl Hadwen',
-      emailAddress: 'karlhadwen@gmail.com',
+      userId: process.env.REACT_APP_FIREBASE_USER_ID,
+      username: 'manu',
+      fullName: 'Manuela Diniz',
+      emailAddress: 'manuela.mdc@gmail.com',
       following: ['2'],
       followers: ['2', '3', '4'],
       dateCreated: Date.now()
@@ -16,7 +18,7 @@ export function seedDatabase(firebase) {
       fullName: 'Raffaello Sanzio da Urbino',
       emailAddress: 'raphael@sanzio.com',
       following: [],
-      followers: ['zOnnCKKEAwMduP3WXrCwtRrKUT92'],
+      followers: [process.env.REACT_APP_FIREBASE_USER_ID],
       dateCreated: Date.now()
     },
     {
@@ -25,7 +27,7 @@ export function seedDatabase(firebase) {
       fullName: 'Salvador Dalí',
       emailAddress: 'salvador@dali.com',
       following: [],
-      followers: ['zOnnCKKEAwMduP3WXrCwtRrKUT92'],
+      followers: [process.env.REACT_APP_FIREBASE_USER_ID],
       dateCreated: Date.now()
     },
     {
@@ -34,17 +36,18 @@ export function seedDatabase(firebase) {
       fullName: 'George Orwell',
       emailAddress: 'george@orwell.com',
       following: [],
-      followers: ['zOnnCKKEAwMduP3WXrCwtRrKUT92'],
+      followers: [process.env.REACT_APP_FIREBASE_USER_ID],
       dateCreated: Date.now()
     }
   ];
 
+  // 2-26-21: `for (const user in users)` will not work
   for (let k = 0; k < users.length; k++) {
-    firebase.firestore().collection('users').add(users[k]);
+    FirebaseApp.firestore().collection('users').add(users[k]);
   }
 
   for (let i = 1; i <= 5; ++i) {
-    firebase
+    FirebaseApp
       .firestore()
       .collection('photos')
       .add({

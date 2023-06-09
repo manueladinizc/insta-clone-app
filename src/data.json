@@ -1,0 +1,144 @@
+{
+  "users": [
+      {
+        "userId": "1",
+        "username": "manu",
+        "fullName": "Manuela Had",
+        "emailAddress": "manuela.mdc@gmail.com",
+        "following": ["2"],
+        "followers": ["2", "3", "4"],
+        "dateCreated": 1654489600000
+      },
+      {
+        "userId": "2",
+        "username": "raphael",
+        "fullName": "Raffaello Sanzio da Urbino",
+        "emailAddress": "raphael@sanzio.com",
+        "following": [],
+        "followers": ["1"],
+        "dateCreated": 1654489600000
+      },
+      {
+        "userId": "3",
+        "username": "dali",
+        "fullName": "Salvador Dalí",
+        "emailAddress": "salvador@dali.com",
+        "following": [],
+        "followers": ["1"],
+        "dateCreated": 1654489600000
+      },
+      {
+        "userId": "4",
+        "username": "orwell",
+        "fullName": "George Orwell",
+        "emailAddress": "george@orwell.com",
+        "following": [],
+        "followers": ["1"],
+        "dateCreated": 1654489600000
+      }
+    ],
+    "photos": [
+      {
+        "photoId": 1,
+        "userId": "2",
+        "imageSrc": "/images/users/raphael/1.jpg",
+        "caption": "Saint George and the Dragon",
+        "likes": [],
+        "comments": [
+          {
+            "displayName": "dali",
+            "comment": "Love this place, looks like my animal farm!"
+          },
+          {
+            "displayName": "orwell",
+            "comment": "Would you mind if I used this picture?"
+          }
+        ],
+        "userLatitude": "40.7128°",
+        "userLongitude": "74.0060°",
+        "dateCreated": 1654489600000
+      },
+      {
+        "photoId": 2,
+        "userId": "2",
+        "imageSrc": "/images/users/raphael/2.jpg",
+        "caption": "Saint George and the Dragon",
+        "likes": [],
+        "comments": [
+          {
+            "displayName": "dali",
+            "comment": "Love this place, looks like my animal farm!"
+          },
+          {
+            "displayName": "orwell",
+            "comment": "Would you mind if I used this picture?"
+          }
+        ],
+        "userLatitude": "40.7128°",
+        "userLongitude": "74.0060°",
+        "dateCreated": 1654489600000
+      },
+      {
+        "photoId": 3,
+        "userId": "2",
+        "imageSrc": "/images/users/raphael/3.jpg",
+        "caption": "Saint George and the Dragon",
+        "likes": [],
+        "comments": [
+          {
+            "displayName": "dali",
+            "comment": "Love this place, looks like my animal farm!"
+          },
+          {
+            "displayName": "orwell",
+            "comment": "Would you mind if I used this picture?"
+          }
+        ],
+        "userLatitude": "40.7128°",
+        "userLongitude": "74.0060°",
+        "dateCreated": 1654489600000
+      },
+      {
+        "photoId": 4,
+        "userId": "2",
+        "imageSrc": "/images/users/raphael/4.jpg",
+        "caption": "Saint George and the Dragon",
+        "likes": [],
+        "comments": [
+          {
+            "displayName": "dali",
+            "comment": "Love this place, looks like my animal farm!"
+          },
+          {
+            "displayName": "orwell",
+            "comment": "Would you mind if I used this picture?"
+          }
+        ],
+        "userLatitude": "40.7128°",
+        "userLongitude": "74.0060°",
+        "dateCreated": 1654489600000
+      },
+      {
+        "photoId": 5,
+        "userId": "2",
+        "imageSrc": "/images/users/raphael/5.jpg",
+        "caption": "Saint George and the Dragon",
+        "likes": [],
+        "comments": [
+          {
+            "displayName": "dali",
+            "comment": "Love this place, looks like my animal farm!"
+          },
+          {
+            "displayName": "orwell",
+            "comment": "Would you mind if I used this picture?"
+          }
+        ],
+        "userLatitude": "40.7128°",
+        "userLongitude": "74.0060°",
+        "dateCreated": 1654489600000
+      }
+    ]
+  }
+  
+  
