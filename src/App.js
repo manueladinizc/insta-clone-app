@@ -1,33 +1,18 @@
-import React from 'react';
-// import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import * as ROUTES from './constants/routes';
+
+const Login = lazy(() => import('./pages/login'));
 
 function App() {
-  // const [data, setData] = useState(null);
-  
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch('https://run.mocky.io/v3/f6d243b5-c5ba-4e33-99fa-c63297b484c1');
-  //       const jsonData = await response.json();
-  //       setData(jsonData);
-  //       console.log(jsonData?.users[0]?.username)
-  //     } catch (error) {
-  //       console.error('Error fetching data:', error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
-
-  // console.log(data?.users[0]?.username)
-
   return (
-    <div>
-      <h1 className="text-3xl text-red font-bold underline">
-      Hello world!!!
-    </h1>
-    <h1 className="text-red-500">Hello, World</h1>
-    </div>
+    <Router>
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+          <Route path='/login' element={Login} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 
