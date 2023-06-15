@@ -1,19 +1,9 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import * as ROUTES from './constants/routes';
-
-const Login = lazy(() => import('./pages/login'));
+// import * as ROUTES from './constants/routes';
+import React from 'react';
+import IndexRoutes from './constants/IndexRoutes';
 
 function App() {
-  return (
-    <Router>
-      <Suspense fallback={<p>Loading...</p>}>
-        <Routes>
-          <Route path='/login' element={Login} />
-        </Routes>
-      </Suspense>
-    </Router>
-  );
+  return <IndexRoutes />;
 }
 
 export default App;
