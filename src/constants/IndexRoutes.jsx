@@ -8,7 +8,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-const LazyLogin = lazy(() => import("../pages/login"));
+const LazyLogin = lazy(() => import('../pages/login'));
 
 export default function IndexRoutes() {
   return (

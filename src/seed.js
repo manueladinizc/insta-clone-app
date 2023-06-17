@@ -1,3 +1,4 @@
+/* eslint-disable */
 // NOTE: replace '1' with your Firebase auth user id (can be taken from Firebase at the auth section! Look for User UID)
 /* eslint-disable no-plusplus */
 // NOTE: replace 'zOnnCKKEAwMduP3WXrCwtRrKUT92' with your Firebase auth user id (can be taken from Firebase)
@@ -10,7 +11,7 @@ export function seedDatabase(FirebaseApp) {
       emailAddress: 'manuela.mdc@gmail.com',
       following: ['2'],
       followers: ['2', '3', '4'],
-      dateCreated: Date.now()
+      dateCreated: Date.now(),
     },
     {
       userId: '2',
@@ -19,7 +20,7 @@ export function seedDatabase(FirebaseApp) {
       emailAddress: 'raphael@sanzio.com',
       following: [],
       followers: [process.env.REACT_APP_FIREBASE_USER_ID],
-      dateCreated: Date.now()
+      dateCreated: Date.now(),
     },
     {
       userId: '3',
@@ -28,7 +29,7 @@ export function seedDatabase(FirebaseApp) {
       emailAddress: 'salvador@dali.com',
       following: [],
       followers: [process.env.REACT_APP_FIREBASE_USER_ID],
-      dateCreated: Date.now()
+      dateCreated: Date.now(),
     },
     {
       userId: '4',
@@ -37,8 +38,8 @@ export function seedDatabase(FirebaseApp) {
       emailAddress: 'george@orwell.com',
       following: [],
       followers: [process.env.REACT_APP_FIREBASE_USER_ID],
-      dateCreated: Date.now()
-    }
+      dateCreated: Date.now(),
+    },
   ];
 
   // 2-26-21: `for (const user in users)` will not work
@@ -59,16 +60,16 @@ export function seedDatabase(FirebaseApp) {
         comments: [
           {
             displayName: 'dali',
-            comment: 'Love this place, looks like my animal farm!'
+            comment: 'Love this place, looks like my animal farm!',
           },
           {
             displayName: 'orwell',
-            comment: 'Would you mind if I used this picture?'
-          }
+            comment: 'Would you mind if I used this picture?',
+          },
         ],
         userLatitude: '40.7128°',
         userLongitude: '74.0060°',
-        dateCreated: Date.now()
+        dateCreated: Date.now(),
       });
   }
 }
