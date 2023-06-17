@@ -9,8 +9,9 @@
       "sourceType": "module"
     },
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-    },
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/no-unescaped-entities": "off"
+        },
     "settings": {
       "import/resolver": {
         "alias": {
