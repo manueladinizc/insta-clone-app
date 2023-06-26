@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import React, { useState, useContext, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import IphoneProfile from '@images/iphone-with-profile.png';
@@ -22,7 +21,7 @@ export default function Login() {
   }, []);
 
   return (
-    <div className="container flex mx-auto max-w-screen-md items-center h-screen">
+    <div className="container flex mx-auto max-w-screen-md items-center h-screen w-screen">
       <div className="flex w-3/5">
         <img src={IphoneProfile} alt="iPhone with Instagram app" />
       </div>
